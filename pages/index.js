@@ -18,8 +18,8 @@ const Home = () => {
 
       <div className="nav">
         <div className="nav-icon-box">
-          <Image width={20} src={icon_home} />
-          <Image width={20} src={icon_write} />
+          <Image width={30} src={icon_home} />
+          <Image width={30} src={icon_write} />
         </div>
         <div className="nav-title">Poodle Problem.log</div>
         <div className="nav-search">
