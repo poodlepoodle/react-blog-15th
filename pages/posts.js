@@ -1,5 +1,7 @@
+import PostItem from './components/PostItem';
+
 const Posts = () => {
-  return <h1>포스트 리스트 페이지</h1>;
+  return <PostItem></PostItem>;
 };
 
 export default Posts;

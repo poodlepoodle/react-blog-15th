@@ -1,7 +1,4 @@
-import CardItem from '../component/CardItem';
-
-import styles from '../styles/Home.module.css';
-
+import CardItem from './components/CardItem';
 /*
 {posts.map((post) => ( 
   ))}
@@ -11,16 +8,22 @@ import styles from '../styles/Home.module.css';
 
   */
 
-const Home = ({ posts }) => {
+const Home = ({}) => {
   return (
     // <div className={styles.container}>
     /* <main className={styles.main}> */
     <div>
-      <CardItem title={'타이틀'} info={'인포'} text={'텍스트'}></CardItem>
+      <CardItem
+        title={'타이틀'}
+        info={'인포'}
+        text={
+          '텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트'
+        }
+      ></CardItem>
     </div>
   );
 };
-
+/*
 export async function getServerSideProps(context) {
   //const res = await fetch(`https://posts`);
   //const { posts } = await res.json();
@@ -28,5 +31,5 @@ export async function getServerSideProps(context) {
     props: {},
   };
 }
-
+*/
 export default Home;

@@ -1,3 +1,9 @@
+.CardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .CardContainer {
   width: calc(100% - (100vw * 0.15));
   display: flex;

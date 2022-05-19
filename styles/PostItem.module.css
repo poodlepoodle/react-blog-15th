@@ -1,0 +1,85 @@
+.PostWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.PostContainer {
+  width: calc(100% - (100vw * 0.15));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ItemInfoWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.navbar_icon_wrapper {
+  width: 28px;
+  height: 28px;
+
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.navbar_right_wrapper {
+  width: 28%;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar_right_wrapper :nth-child(2) {
+  margin-left: 28px;
+}
+
+.ItemMainTextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.ItemImage {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.ItemTitle {
+  font-family: sans-serif;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.ItemInfo {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #888888;
+  text-align: left;
+}
+
+.ItemText {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+  text-align: left;
+}
