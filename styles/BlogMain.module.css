@@ -1,0 +1,62 @@
+.CardContainer {
+  width: calc(100% - (100vw * 0.15));
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: left;
+}
+
+.ItemInfoWrapper {
+  width: calc(100% - 200px);
+  height: 160px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.ItemMainTextWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.ItemImage {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.ItemTitle {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  margin-right: 12px;
+}
+
+.ItemInfo {
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+  color: #888888;
+  text-align: left;
+}
+
+.ItemText {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+  text-align: left;
+}
