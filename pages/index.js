@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import CardItem from '../component/CardItem';
 
 import icon_home from '../public/icons/home.png';
 import icon_write from '../public/icons/write.png';
@@ -28,7 +29,9 @@ const Home = () => {
       </div>
 
       {/* <main className={styles.main}> */}
-      <div>main page</div>
+      <div>
+        <CardItem></CardItem>
+      </div>
 
       {/* <footer className={styles.footer}>
         <a
