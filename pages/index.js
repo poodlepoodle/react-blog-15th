@@ -10,24 +10,12 @@ const Home = () => {
   return (
     // <div className={styles.container}>
     <div className={styles.wrapper}>
-      <Head>
+      {/* <Head>
         <title>Poodle Problem.log</title>
         <meta name="description" content="~.~ Poodle Problem.log ~.~" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+        <link rel="icon" href="/favicon.ico" /> */}
+      {/* </Head> */}
 
-      <div className="nav">
-        <div className="nav-icon-box">
-          <Image width={30} src={icon_home} />
-          <Image width={30} src={icon_write} />
-        </div>
-        <div className="nav-title">Poodle Problem.log</div>
-        <div className="nav-search">
-          <input />
-        </div>
-      </div>
-
-      {/* <main className={styles.main}> */}
       <div>main page</div>
 
       {/* <footer className={styles.footer}>

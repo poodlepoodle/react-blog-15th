@@ -12,5 +12,16 @@ a {
 }
 
 * {
+  font-family: sans-serif;
   box-sizing: border-box;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus {
+  outline: none;
 }
