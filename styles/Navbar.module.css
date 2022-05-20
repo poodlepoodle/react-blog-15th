@@ -16,15 +16,15 @@
 }
 
 .navbar_left_wrapper :nth-child(2) {
-  margin-left: 32px;
+  margin-left: 28px;
 }
 
 .navbar_icon_wrapper {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
 
   opacity: 1;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 
 .navbar_icon_wrapper:hover {
@@ -42,6 +42,13 @@
 .navbar_title {
   font-size: 22px;
   font-weight: 600;
+
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.navbar_title:hover {
+  opacity: 0.6;
 }
 
 .navbar_right_wrapper {
@@ -65,21 +72,25 @@
   text-align: right;
 
   margin-right: 10px;
-  margin-bottom: 2px;
   padding: 10px;
 
-  width: 150px;
+  width: 180px;
   height: 100%;
 
   border: none;
   border-radius: 8px;
 
   font-size: 14px;
+  font-weight: 400;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 
   background-color: #f9f9f9;
 
   opacity: 0%;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 
 .nav_search:hover > input {
