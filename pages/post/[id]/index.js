@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-// import Header from "../../../components/header";
+
+import PostItem from '../../components/PostItem';
 
 const Post = () => {
   const router = useRouter();
@@ -9,9 +10,9 @@ const Post = () => {
   return (
     <>
       {/* <Header /> */}
-      <h1>Post: {id}</h1>
+      {/* <h1>Post: {id}</h1> */}
       {/* <Link href="/post/[id]/[comment]" as={`/post/${id}/first-comment`}> */}
-      <a>First comment</a>
+      <PostItem />
     </>
   );
 };

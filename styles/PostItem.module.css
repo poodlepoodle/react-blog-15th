@@ -1,11 +1,14 @@
-.PostWrapper {
+.post_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+
+  height: calc(100vh - 120px);
+  overflow: scroll;
 }
 
-.PostContainer {
+.post_container {
   width: calc(100% - (100vw * 0.15));
   display: flex;
   flex-direction: column;
@@ -13,7 +16,7 @@
   justify-content: center;
 }
 
-.ItemInfoWrapper {
+.item_info_wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -22,15 +25,7 @@
   margin-bottom: 48px;
 }
 
-.navbar_icon_wrapper {
-  width: 28px;
-  height: 28px;
-
-  opacity: 1;
-  transition: 0.3s ease;
-}
-
-.navbar_right_wrapper {
+.item_btn_wrapper {
   width: 28%;
 
   display: flex;
@@ -38,25 +33,37 @@
   align-items: center;
 }
 
-.navbar_right_wrapper :nth-child(2) {
-  margin-left: 28px;
+.item_btn_icon_wrapper {
+  width: 28px;
+  height: 28px;
+
+  opacity: 1;
+  transition: 0.3s ease;
 }
 
-.ItemMainTextWrapper {
+.item_btn_icon_wrapper:hover {
+  opacity: 0.5;
+}
+
+.item_btn_wrapper .item_btn_icon_wrapper:nth-child(2) {
+  margin-left: 8%;
+}
+
+.item_maintext_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: flex-start;
 }
 
-.ItemImage {
+.item_image {
   width: 150px;
   height: 100px;
   object-fit: cover;
   margin-right: 20px;
 }
 
-.ItemTitle {
+.item_title {
   font-family: sans-serif;
   font-size: 28px;
   line-height: 28px;
@@ -66,7 +73,7 @@
   margin-bottom: 24px;
 }
 
-.ItemInfo {
+.item_info {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -75,7 +82,7 @@
   text-align: left;
 }
 
-.ItemText {
+.item_text {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 24px;

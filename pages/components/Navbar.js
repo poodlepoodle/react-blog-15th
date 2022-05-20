@@ -39,7 +39,7 @@ const Navbar = () => {
 
       <div className={styles.navbar_right_wrapper}>
         <div className={styles.nav_search}>
-          <input />
+          <input placeholder="검색..." />
           <div className={styles.navbar_icon_wrapper}>
             <Image src={icon_search} />
           </div>

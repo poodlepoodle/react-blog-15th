@@ -3,6 +3,7 @@
   justify-content: space-evenly;
 
   height: 100px;
+  margin-bottom: 20px;
 }
 
 .navbar_left_wrapper {
@@ -28,7 +29,7 @@
 }
 
 .navbar_icon_wrapper:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .navbar_center_wrapper {
@@ -48,7 +49,7 @@
 }
 
 .navbar_title:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .navbar_right_wrapper {
@@ -75,12 +76,12 @@
   padding: 10px;
 
   width: 180px;
-  height: 100%;
+  height: 95%;
 
   border: none;
   border-radius: 8px;
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 
   text-overflow: ellipsis;
@@ -94,5 +95,9 @@
 }
 
 .nav_search:hover > input {
+  opacity: 100%;
+}
+
+.nav_search > input:not(:placeholder-shown) {
   opacity: 100%;
 }
