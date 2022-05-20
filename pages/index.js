@@ -21,8 +21,8 @@ const Home = ({ postsList }) => {
         <Link href="/posts/[id]" as={`/posts/${post.id}`}>
           <a>
             <CardItem
-              key={post.id}
-              // id={post.id}
+              // key={post.id}
+              id={post.id}
               title={post.title}
               info={post.dateCreated}
               text={post.bodyText}
