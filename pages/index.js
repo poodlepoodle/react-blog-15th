@@ -4,55 +4,29 @@ import Link from 'next/link';
 
 import CardItem from './components/CardItem';
 
-const posts = [
-  {
-    id: 1,
-    title: '잠을 안 잤더니 졸린 기분이에요',
-    dateCreated: '2022-05-20 01:15 PM',
-    bodyText:
-      '텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트',
-  },
-  {
-    id: 2,
-    title: '잠을 안 잤더니 졸린 기분이에요',
-    dateCreated: '2022-05-20 01:15 PM',
-    bodyText:
-      '텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트',
-  },
-  {
-    id: 3,
-    title: '잠을 안 잤더니 졸린 기분이에요',
-    dateCreated: '2022-05-20 01:15 PM',
-    bodyText:
-      '텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트',
-  },
-  {
-    id: 4,
-    title: '잠을 안 잤더니 졸린 기분이에요',
-    dateCreated: '2022-05-20 01:15 PM',
-    bodyText:
-      '텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트',
-  },
-  {
-    id: 5,
-    title: '잠을 안 잤더니 졸린 기분이에요',
-    dateCreated: '2022-05-20 01:15 PM',
-    bodyText:
-      '텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트',
-  },
-];
+import { post } from '../posts';
 
-const Home = ({}) => {
+export const getStaticProps = async () => {
+  return {
+    props: {
+      postsList: post,
+    },
+  };
+};
+
+const Home = ({ postsList }) => {
   return (
     <div className={styles.wrapper}>
-      {posts.map((post) => (
-        <Link href="/post/[id]" as={`/post/${post.id}`}>
+      {postsList.map((post) => (
+        <Link href="/posts/[id]" as={`/posts/${post.id}`}>
           <a>
             <CardItem
-              id={post.id}
+              key={post.id}
+              // id={post.id}
               title={post.title}
               info={post.dateCreated}
               text={post.bodyText}
+              {...postsList}
             />
           </a>
         </Link>
@@ -60,13 +34,5 @@ const Home = ({}) => {
     </div>
   );
 };
-/*
-export async function getServerSideProps(context) {
-  //const res = await fetch(`https://posts`);
-  //const { posts } = await res.json();
-  return {
-    props: {},
-  };
-}
-*/
+
 export default Home;

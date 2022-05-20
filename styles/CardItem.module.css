@@ -90,8 +90,16 @@
 .item_text {
   font-family: sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 300;
-  color: #000000;
+  line-height: 24px;
   text-align: left;
+
+  color: #000000;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
