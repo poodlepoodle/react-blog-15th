@@ -1,7 +1,7 @@
-// import { useRouter } from 'next/router';
-// import Link from 'next/link';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-import { post } from '../posts';
+import { post } from '../../posts';
 
 import PostItem from '../components/PostItem';
 
@@ -26,13 +26,16 @@ export default ({ postItem }) => {
   // const router = useRouter();
   // const { id } = router.query;
 
+  // console.log({ query: router.query, router: router });
+
   return (
     <>
-      {/* <Header /> */}
-      {/* <h1>Post: {id}</h1> */}
-      {/* <Link href="/post/[id]/[comment]" as={`/post/${id}/first-comment`}> */}
-      {/* <PostItem /> */}
-      <h1>{postItem.title}</h1>
+      <PostItem
+        id={postItem.id}
+        title={postItem.title}
+        info={postItem.dateCreated}
+        text={postItem.bodyText}
+      />
     </>
   );
 };
