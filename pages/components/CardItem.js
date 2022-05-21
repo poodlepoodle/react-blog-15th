@@ -5,7 +5,7 @@ import styles from '../../styles/CardItem.module.css';
 
 import bearEmoji from '../../public/emojis/bear-face.png';
 
-const CardItem = ({ title, info, text }) => {
+const CardItem = ({ id, title, info, text }) => {
   return (
     <div className={styles.card_wrapper}>
       <div className={styles.card_container}>
