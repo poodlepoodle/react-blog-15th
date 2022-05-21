@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
 const Home = ({ postsList }) => {
   return (
     <div className={styles.wrapper}>
-      {postsList.map((post) => (
+      {/* {postsList.map((post) => (
         <Link href="/posts/[id]" as={`/posts/${post.id}`}>
           <a>
             <CardItem
@@ -30,7 +30,8 @@ const Home = ({ postsList }) => {
             />
           </a>
         </Link>
-      ))}
+      ))} */}
+      <h1>공사 중</h1>
     </div>
   );
 };
