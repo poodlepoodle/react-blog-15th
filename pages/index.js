@@ -19,19 +19,21 @@ const Home = ({ postsList }) => {
 
   return (
     <div className={styles.wrapper}>
-      {postsList.map((post) => (
-        // <Link href="/posts/[id]" as={`/posts/${post.id}`}>
-        //   <a>
-        <CardItem
-          key={post.id}
-          title={post.title}
-          info={post.dateCreated}
-          text={post.bodyText}
-          {...postsList}
-        />
-        //   </a>
-        // </Link>
-      ))}
+      {/* {postsList.map((post) => (
+        <Link href="/posts/[id]" as={`/posts/${post.id}`}>
+          <a>
+            <CardItem
+              key={post.id}
+              // id={post.id}
+              title={post.title}
+              info={post.dateCreated}
+              text={post.bodyText}
+              {...postsList}
+            />
+          </a>
+        </Link>
+      ))} */}
+      <h1>공사 중</h1>
     </div>
   );
 };
